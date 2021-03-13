@@ -99,31 +99,31 @@ def init_encoder():
     vfoencoder.add_listener(encoderCallback)
     
     # Encoder 2
-    encoder2 = RotaryIRQ(pin_num_clk=13, pin_num_dt=12, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=True, encoderAddress=2)
+    encoder2 = RotaryIRQ(pin_num_clk=14, pin_num_dt=15, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=True, encoderAddress=2)
     encoder2.add_listener(encoderCallback)
     
-    encoder6 = RotaryIRQ(pin_num_clk=15, pin_num_dt=14, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=True, encoderAddress=6)
+    encoder6 = RotaryIRQ(pin_num_clk=12, pin_num_dt=13, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=True, encoderAddress=6)
     encoder6.add_listener(encoderCallback)
 
     # Encoder 3
-    encoder3 = RotaryIRQ(pin_num_clk=9, pin_num_dt=8, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=True, encoderAddress=3)
+    encoder3 = RotaryIRQ(pin_num_clk=10, pin_num_dt=11, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=True, encoderAddress=3)
     encoder3.add_listener(encoderCallback)
     
-    encoder7 = RotaryIRQ(pin_num_clk=11, pin_num_dt=10, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=True, encoderAddress=7)
+    encoder7 = RotaryIRQ(pin_num_clk=8, pin_num_dt=9, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=True, encoderAddress=7)
     encoder7.add_listener(encoderCallback)
     
     # Encoder 4
-    encoder4 = RotaryIRQ(pin_num_clk=5, pin_num_dt=4, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=True, encoderAddress=4)
+    encoder4 = RotaryIRQ(pin_num_clk=7, pin_num_dt=6, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=True, encoderAddress=4)
     encoder4.add_listener(encoderCallback)
     
-    encoder8 = RotaryIRQ(pin_num_clk=6, pin_num_dt=7, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=True, encoderAddress=8)
+    encoder8 = RotaryIRQ(pin_num_clk=4, pin_num_dt=5, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=True, encoderAddress=8)
     encoder8.add_listener(encoderCallback)
     
     # Dual Encoder 5
-    encoder5 = RotaryIRQ(pin_num_clk=19, pin_num_dt=18, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=False, encoderAddress=5)
+    encoder5 = RotaryIRQ(pin_num_clk=17, pin_num_dt=16, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=True, encoderAddress=5)
     encoder5.add_listener(encoderCallback)
     
-    encoder9 = RotaryIRQ(pin_num_clk=17, pin_num_dt=16, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=False, encoderAddress=9)
+    encoder9 = RotaryIRQ(pin_num_clk=19, pin_num_dt=18, min_val=1, max_val=2, reverse=False, range_mode=RotaryIRQ.RANGE_UNBOUNDED, pull_up=True, encoderAddress=9)
     encoder9.add_listener(encoderCallback)
 
 def initI2C():
